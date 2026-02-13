@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "s3dupy"
+version = "0.1.0"
+description = "ncdu-like TUI for cleaning S3 / DO Spaces buckets"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Artem Mametyev" }]
+keywords = ["s3", "ncdu", "tui", "spaces", "disk-usage"]
+classifiers = [
+    "Environment :: Console",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "aiobotocore>=2.9",
+    "boto3",
+    "rich>=13",
+    "textual>=0.40",
+]
+
+[project.scripts]
+s3ncdu = "s3ncdu:main"
