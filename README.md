@@ -6,7 +6,7 @@ ncdu for S3. Async parallel scan + Textual TUI.
 
 ```bash
 pip install .
-s3ncdu --endpoint=https://fra1.digitaloceanspaces.com --bucket=mybucket --ak=KEY --sk=SECRET
+s3ncdu --endpoint=https://id.digitaloceanspaces.com --bucket=mybucket --ak=KEY --sk=SECRET
 ```
 
 Or via env vars: `S3_ENDPOINT`, `S3_BUCKET`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`.
